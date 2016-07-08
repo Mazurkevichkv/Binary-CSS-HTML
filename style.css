@@ -1,0 +1,136 @@
+body {
+   font-family: 'sans-serif';
+   width:99%;
+   color:white;
+   font-size:20px;
+}
+
+.vertical-centered {
+	display: table;
+}
+.vertical-centered:nth-child(n){
+	display: table-cell;
+    vertical-align: middle;
+}
+.horizontal-centered:nth-child(n){
+    text-align: center;
+}
+
+header {
+   position: relative;
+   height:200px;
+}
+.header__logo {
+   float: left;
+   width:200px;
+   height:100%;
+}
+.header__logo img {
+   width:100%;
+}
+.header__title {
+   position: absolute;
+   top:0px;
+   left:220px;
+   right: 0px;
+   bottom: 0px;
+   border:1px solid black;
+   color:white;
+   border-radius: 5px;
+   border:3px solid white;
+   background-color: #a0a0a0;
+}
+.header__title p {
+	font-size: 64px;
+    padding-left:30px;
+}
+main {
+    position: relative;
+    min-height: 700px; 
+}
+menu {
+	float:left;
+	width: 300px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	background-color: #a0a0a0;
+	padding-left: 0px;
+}
+menu ul {
+	list-style: none;
+	float:left;
+	width:92%;
+	padding:0px;
+}
+menu li {
+	height:30px;
+	width:100%;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+	padding:10px;
+	margin-bottom: 20px;
+	border-bottom: 1px white solid;
+
+}
+content {
+	position: absolute;
+	top:20px;
+	left:330px;
+	right:0px;
+	bottom: 20px;
+	background-color: grey ;
+}
+.content__first-block {
+	overflow: auto;
+	width:100%;
+	height:400px;
+	border:2px solid white;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+.content__first-block > div {
+    width:400px;
+    height:150px;
+    line-height: 150px;
+    margin:20px;
+    border-radius: 5px;
+    border:3px solid white;
+}
+.content__second-block {
+	width:100%;
+	min-height:250px;
+	border-collapse: separate;
+	border-spacing: 40px; 
+}
+.content__second-block > div {
+    padding:20px;
+    width:400px;
+    height:140px;
+    margin: 20px;
+    border-radius: 5px;
+    border:3px solid white;
+}
+
+.footer__first-block {
+	background-color: #e0e0e0;
+	width:100%;
+	color:darkblue;
+}
+.footer__first-block > div {
+    width:620px;
+    height:80px;
+    border:1px solid black;
+}
+.footer__second-block {
+	width:100%;
+	color:darkblue;
+	background-color: #a0a0a0;
+}
+.footer__second-block > div {
+    width:1860px;
+    height:40px;
+}
