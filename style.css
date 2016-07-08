@@ -106,6 +106,13 @@ content {
 	border-collapse: separate;
 	border-spacing: 40px; 
 }
+.content__second-block:before {
+    position: absolute;
+    left:0;
+    right:0px;
+	content:'';
+	border:1px solid blue;
+}
 .content__second-block > div {
     padding:20px;
     width:400px;
